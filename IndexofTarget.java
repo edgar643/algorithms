@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class main {
+public class IndexofTarget {
 
 
   /*Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -35,23 +35,23 @@ calculateIndexSimplerSolution();
 //N elements NXN
         int[] nums = {5, 2, 4, 6, 7, 8};
         int target = 10;
-        int[] answer = null;
+       List<Integer> answer = new ArrayList<>();
         boolean exit = false;
 
         for (int i = 0; i < nums.length && !exit; i++) {
             for (int j = 0; j < nums.length; j++) {
                 if (i != j) {
                     if ((nums[i] + nums[j]) == target) {
-                        answer = new int[]{i, j};
-                        System.out.println(i + " " + j);
-                        exit = true;
-                        break;
+                       answer.add(i);
+                       answer.add(j);
+                       // exit = true;
+                       // break;
                     }
                 }
             }
 
         }
-        System.out.println(answer.toString());
+        System.out.println("Indexes added equals to targe are: "+answer.toString());
 
 
     }
@@ -60,16 +60,29 @@ calculateIndexSimplerSolution();
         int[] numsw = {5, 2, 4, 6, 7, 8};
         List<Integer> nums = List.of(5, 2, 4, 6, 7, 8);
         HashMap<Integer, Integer> numIndexMap = new HashMap<>();
+        List<Integer> answer = new ArrayList<>();
         int i = 0;
         int target = 10;
+
         for (Integer num : nums) {
-            numIndexMap.put(num, i++);
+            numIndexMap.put(num, i);
             int comp = target - num;
+
             boolean matchComplement = numIndexMap.containsKey(comp);
-            if (matchComplement) {
-                System.out.println(numIndexMap.get(num) + " " + numIndexMap.get(comp));
+
+            if (matchComplement && numIndexMap.get(comp)!= i) {
+                answer.add(numIndexMap.get(num));
+                answer.add(numIndexMap.get(comp));
                 break;
             }
+            i++;
         }
+
+       if(!answer.isEmpty()) {
+           System.out.println("I: Indexes added equals to targe are: "+answer.toString());
+       }else {
+           System.out.println("This target can not be added for none of on: "+nums);
+       }
+
     }
 }
