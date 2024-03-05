@@ -5,7 +5,8 @@ import java.util.List;
 public class IndexofTarget {
 
 
-  /*Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+  /*Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to
+   target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -26,8 +27,8 @@ Output: [0,1]
 *  */
 
     public static void main(String[] args) {
-improved();
-calculateIndexSimplerSolution();
+        improved();
+        calculateIndexSimplerSolution();
     }
 
     public static void calculateIndexSimplerSolution() {
@@ -35,25 +36,23 @@ calculateIndexSimplerSolution();
 //N elements NXN
         int[] nums = {5, 2, 4, 6, 7, 8};
         int target = 10;
-       List<Integer> answer = new ArrayList<>();
+        List<Integer> answer = new ArrayList<>();
         boolean exit = false;
 
         for (int i = 0; i < nums.length && !exit; i++) {
             for (int j = 0; j < nums.length; j++) {
                 if (i != j) {
                     if ((nums[i] + nums[j]) == target) {
-                       answer.add(i);
-                       answer.add(j);
-                       // exit = true;
-                       // break;
+                        answer.add(i);
+                        answer.add(j);
+                        // exit = true;
+                        // break;
                     }
                 }
             }
-
         }
-        System.out.println("Indexes added equals to targe are: "+answer.toString());
 
-
+        System.out.println("Indexes added equals to targe are: " + answer.toString());
     }
 
     public static void improved() {
@@ -70,7 +69,7 @@ calculateIndexSimplerSolution();
 
             boolean matchComplement = numIndexMap.containsKey(comp);
 
-            if (matchComplement && numIndexMap.get(comp)!= i) {
+            if (matchComplement && numIndexMap.get(comp) != i) {
                 answer.add(numIndexMap.get(num));
                 answer.add(numIndexMap.get(comp));
                 break;
@@ -78,11 +77,11 @@ calculateIndexSimplerSolution();
             i++;
         }
 
-       if(!answer.isEmpty()) {
-           System.out.println("I: Indexes added equals to targe are: "+answer.toString());
-       }else {
-           System.out.println("This target can not be added for none of on: "+nums);
-       }
+        if (!answer.isEmpty()) {
+            System.out.println("I: Indexes added equals to targe are: " + answer.toString());
+        } else {
+            System.out.println("This target can not be added for none of on: " + nums);
+        }
 
     }
 }

@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdf47ab8-4e6d-4b97-ab4c-5815b3574288" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LongestCommonPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traducciones" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ValidParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/findCommonElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repeatedChar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/IndexofTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exercices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exercices/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndexofTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/IndexofTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercices/IndexofTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercices/IndexofTarget.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +42,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/edgargarcialandaeta/Documents/exercices",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/edgargarcialandaeta/Documents/exercices&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.ValidParentheses">
     <configuration name="IndexofTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="IndexofTarget" />
       <module name="exercices" />
@@ -60,8 +66,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LongestCommonPrefix" />
+      <module name="exercices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ValidParentheses" />
+      <module name="exercices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ValidParentheses" />
+        <item itemvalue="Application.LongestCommonPrefix" />
         <item itemvalue="Application.IndexofTarget" />
       </list>
     </recent_temporary>
@@ -76,7 +98,11 @@
       <updated>1708975662032</updated>
       <workItem from="1708975663324" duration="4199000" />
       <workItem from="1709041120016" duration="416000" />
-      <workItem from="1709050543084" duration="1434000" />
+      <workItem from="1709050543084" duration="6418000" />
+      <workItem from="1709059529410" duration="1740000" />
+      <workItem from="1709215563868" duration="431000" />
+      <workItem from="1709299895183" duration="457000" />
+      <workItem from="1709570662955" duration="392000" />
     </task>
     <servers />
   </component>
